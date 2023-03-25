@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="find_student">
+    <div class="parent">
+        <form method="POST">
+            {% csrf_token %}
+            <label >Enter the {{getName}} of the student:</label>
+            <input type="text" required name="detail"><br>
+            <input type="submit" class="btn">
+        </form>
+    </div>
+    {% if {{value}}=none %}
+        <h2>value not found</h2>    
+    {%  else %}
+        pass
+    {% endif %}
+
+
+</div>
+
+<!-- 9894306021-dhana -->
+
+    
+{% endblock %}

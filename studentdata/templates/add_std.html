@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Add  New Student </h1>
+<div class="add_student_parent">
+    
+    <div class="inner_parent">
+        <form method="POST" >
+            {% csrf_token %}
+            <table >
+                <tr>
+                    <td><label >reg_no</label></td>
+                    <td><input type="text" name="reg_no" placeholder="enter reg_no" required></td>
+                </tr>
+                <tr>
+                    <td><label >Name</label></td>
+                    <td><input type="text" name="name" placeholder="enter your name" required></td>
+                </tr>
+                <tr>
+                    <td><label >Age</label></td>
+                    <td><input type="text" name="age" placeholder="enter your age" required></td>
+                </tr>
+                <tr>
+                    <td><label >Date of Birth</label></td>
+                    <td><input type="text" name="DOB" placeholder="enter your Date of Birth" ></td>
+                </tr>
+                <tr>
+                    <td><label >Mark</label></td>
+                    <td><input type="text" name="mark" placeholder="enter mark" required></td>
+                </tr>
+                
+                <tr colspan="2">
+                    <td><input type="submit" class="btn"></td>
+                </tr>
+            </table>
+        
+        </form>
+    </div>
+    
+</div>
+
+{% endblock %}

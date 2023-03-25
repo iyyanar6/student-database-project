@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<!-- <h1>Find Student </h1> -->
+
+<div class="result_parent">
+    <div class="parent" >
+        
+        <form method="POST" >
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td><label >student Name</label></td>
+                    <td><label >: {{value.name}}</label></td>
+                </tr>
+                <tr>
+                    <td><label >student ID</label> </td>
+                    <td><label >: {{value.std_ID}}</label></td>
+                </tr>
+                <tr>
+                    <td><label >age </label></td>
+                    <td><label >: {{value.age}}</label></td>
+                </tr>
+                <tr>
+                    <td><label >Date of birth </label></td>
+                    <td><label >: {{value.DOB}}</label></td>
+                </tr>
+                <tr>
+                    <td><label >mark </label></td>
+                    <td><label >: {{value.Mark}}</label></td>
+                </tr>
+
+            </table>
+            
+            <button  class="edit_btn"><a href="{% url 'edit' value.std_ID %}">Edit</a></button>
+            <button  class="del_btn" ><a href="{% url 'delete' value.std_ID %}">delete</a></button>
+            
+        </form>
+    </div>
+    
+    
+{% endblock %}

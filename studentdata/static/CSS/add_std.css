@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  font-size: 23px;
+}
+
+.add_student_parent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.add_student_parent .inner_parent {
+  width: 400px;
+  height: 350px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 10px cyan;
+}
+.add_student_parent .inner_parent form {
+  text-align: left;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+.add_student_parent .inner_parent form table tr td {
+  padding: 7px;
+}
+.add_student_parent .inner_parent form table tr td input {
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+.add_student_parent .inner_parent form table tr td .btn {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgb(107, 217, 230);
+}
+.add_student_parent .inner_parent form table tr td .btn:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan 0 0 100px cyan, 0 0 200px cyan;
+  background-color: rgb(69, 145, 245);
+  box-shadow: 0 0 10px cyan;
+}/*# sourceMappingURL=add_std.css.map */

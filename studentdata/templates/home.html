@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="main_parent">
+    <div class="parent">
+        <h1>Find a Student with</h1>    
+        <form method="POST" >
+            {% csrf_token %}        
+            <input type="radio" name="radio" value="name">
+            <label >name</label>
+            <input type="radio" name="radio" value="id">
+            <label for="">id</label><br>
+            <input type="submit" class="btn">        
+        </form>
+       
+    </div>
+    <div class="parent1">
+        <h1>Add Student Detail</h1>
+        <button  class="add_btn"><a href="{% url 'add_std' %}">add student</a></button>
+        
+    </div>
+</div>
+
+<!-- <script src=" static/js/add_std.js"></script> -->
+
+{% endblock %}

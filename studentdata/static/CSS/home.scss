@@ -1,0 +1,74 @@
+.main_parent{
+    margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    .parent{
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        padding-top: 19px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 20px;
+        box-shadow: 0 0 10px cyan;
+        form{
+
+        .btn{
+            width: 120px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: rgb(107, 217, 230); 
+            margin-top: 70px;
+            a{
+                text-decoration: none;
+                color: black;
+            }   
+        }
+        .btn:hover{           
+            box-shadow: 0 0 5px cyan,
+             0 0 25px cyan, 0 0 50px cyan
+            0 0 100px cyan, 0 0 200px cyan;
+            background-color: rgb(69, 145, 245);
+            box-shadow: 0 0 10px cyan;
+        }
+    }
+        h1{
+                margin-top: 20px;
+            }
+    }
+    
+
+    .parent1{
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        padding-top: 20px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 20px;
+        box-shadow: 0 0 10px cyan; 
+        h1{
+            padding-top: 20px;
+        }
+        .add_btn{
+            width: 120px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: rgb(107, 217, 230); 
+            margin-top: 70px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .add_btn:hover{        
+            box-shadow: 0 0 5px cyan,
+             0 0 25px cyan, 0 0 50px cyan
+            0 0 100px cyan, 0 0 200px cyan;
+            background-color: rgb(69, 145, 245);
+            box-shadow: 0 0 10px cyan;
+        }
+    }  
+    
+}
+
